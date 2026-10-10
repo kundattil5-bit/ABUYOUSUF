@@ -1,0 +1,1285 @@
+:root{
+    --gold:#d4a04c;
+    --dark:#020b18;
+    --card:#071427;
+    --white:#ffffff;
+}
+.custom-navbar {
+    background: rgba(2, 11, 30, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(216, 166, 91, .15);
+}
+
+.logo {
+    height: 60px;
+}
+
+.navbar-nav {
+    gap: 25px;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 500;
+    position: relative;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: var(--gold) !important;
+}
+
+.nav-link.active {
+    color: var(--gold) !important;
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: var(--gold);
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+}
+
+
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+@media (max-width:991px){
+
+    .custom-navbar{
+        padding:12px 0;
+    }
+
+    .navbar-collapse{
+        background:#07152E;
+        margin-top:15px;
+        border-radius:15px;
+        padding:20px;
+    }
+
+    .navbar-nav{
+        gap:10px;
+        text-align:center;
+    }
+
+    .order-btn{
+        width:100%;
+        margin-top:15px;
+        text-align:center;
+    }
+
+    .nav-link.active::after{
+        display:none;
+    }
+}
+/* =========================
+   GLOBAL
+========================= */
+
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--dark);
+    color:var(--white);
+    font-family:'Poppins',sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section{
+    padding:80px 0;
+}
+
+.container{
+    max-width:1320px;
+}
+
+.gold{
+    color:var(--gold);
+}
+
+.small-title{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-size:14px;
+    margin-bottom:15px;
+    font-weight:500;
+}
+
+.section-title{
+    font-size:58px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:25px;
+} */
+
+/* =========================
+   BUTTON
+========================= */
+
+/* .btn-gold{
+    display:inline-block;
+    padding:14px 35px;
+    border:1px solid var(--gold);
+    color:var(--gold);
+    border-radius:50px;
+    transition:.4s;
+    font-weight:600;
+}
+
+.btn-gold:hover{
+    background:var(--gold);
+    color:#000;
+} */
+
+/* =========================
+   HERO SECTION
+========================= */
+
+/* .hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    background:
+    linear-gradient(
+    to right,
+    rgba(0,0,0,.92),
+    rgba(0,0,0,.45)
+    ),
+    url("../images/hero-meat.jpg");
+    background-position:center;
+    background-size:cover;
+}
+
+.hero-content{
+    max-width:650px;
+}
+
+.hero h1{
+    font-size:72px;
+    font-weight:800;
+    line-height:1.1;
+    margin-bottom:25px;
+}
+
+.hero p{
+    color:#d5d5d5;
+    font-size:18px;
+    line-height:1.8;
+} */
+
+/* =========================
+   STORY SECTION
+========================= */
+
+/* .story{
+    background:#031022;
+}
+
+.story-img{
+    width:100%;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,.4);
+}
+
+.story p{
+    color:#cfcfcf;
+    line-height:1.9;
+} */
+
+/* =========================
+   PRODUCT SECTION
+========================= */
+
+/* .product-section{
+    background:#020b18;
+}
+
+.product-card{
+    background:linear-gradient(
+    180deg,
+    #09172b,
+    #04101f
+    );
+    border:1px solid rgba(212,160,76,.4);
+    border-radius:12px;
+    overflow:hidden;
+    transition:.4s;
+    height:100%;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--gold);
+}
+
+.product-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.product-card h5{
+    text-align:center;
+    padding:18px;
+    font-size:18px;
+    font-weight:600;
+} */
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+/* .feature-box{
+    background:#071427;
+    border:1px solid rgba(212,160,76,.35);
+    border-radius:15px;
+    padding:30px;
+    height:100%;
+    transition:.4s;
+}
+
+.feature-box:hover{
+    border-color:var(--gold);
+    transform:translateY(-5px);
+}
+
+.feature-icon{
+    font-size:42px;
+    color:var(--gold);
+    margin-bottom:20px;
+}
+
+.feature-box h5{
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.feature-box p{
+    color:#cfcfcf;
+    line-height:1.8;
+} */
+
+/* =========================
+   STATS SECTION
+========================= */
+
+/* .stats{
+    position:relative;
+    background:url("../images/stats-bg.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.stats::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.65);
+}
+
+.stats .container{
+    position:relative;
+    z-index:2;
+}
+
+.stats-box{
+    text-align:center;
+}
+
+.stats-box h2{
+    font-size:60px;
+    color:var(--gold);
+    font-weight:800;
+    margin-bottom:10px;
+}
+
+.stats-box p{
+    font-size:18px;
+    color:#ddd;
+} */
+
+/* =========================
+   MISSION SECTION
+========================= */
+
+/* .mission{
+    background:#031022;
+}
+
+.mission-img{
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 40px rgba(0,0,0,.5);
+}
+
+.mission p{
+    color:#cfcfcf;
+    line-height:1.9;
+} */
+
+/* =========================
+   CTA SECTION
+========================= */
+
+/* .cta{
+    padding-top:20px;
+    padding-bottom:70px;
+}
+
+.cta-box{
+    background:linear-gradient(
+    180deg,
+    #071427,
+    #031022
+    );
+    border:1px solid rgba(212,160,76,.35);
+    border-radius:25px;
+    padding:50px;
+}
+
+.cta-box h2{
+    font-size:42px;
+    color:var(--gold);
+    margin-bottom:15px;
+    font-weight:700;
+}
+
+.cta-box p{
+    color:#d0d0d0;
+} */
+
+/* =========================
+   CARD SPACING
+========================= */
+
+/* .row-gap{
+    row-gap:25px;
+} */
+
+/* =========================
+   MOBILE
+========================= */
+
+/* @media(max-width:1199px){
+
+.hero h1{
+    font-size:60px;
+}
+
+.section-title{
+    font-size:48px;
+}
+
+}
+
+@media(max-width:991px){
+
+.hero{
+    text-align:center;
+}
+
+.hero-content{
+    margin:auto;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.section-title{
+    font-size:40px;
+}
+
+.stats-box h2{
+    font-size:45px;
+}
+
+.cta-box{
+    text-align:center;
+}
+
+}
+
+@media(max-width:767px){
+
+section{
+    padding:60px 0;
+}
+
+.hero{
+    min-height:90vh;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:16px;
+}
+
+.section-title{
+    font-size:32px;
+}
+
+.product-card img{
+    height:180px;
+}
+
+.stats-box{
+    margin-bottom:30px;
+}
+
+.stats-box h2{
+    font-size:38px;
+}
+
+.cta-box{
+    padding:30px;
+}
+
+.cta-box h2{
+    font-size:28px;
+}
+
+}
+
+@media(max-width:575px){
+
+.hero h1{
+    font-size:32px;
+}
+
+.section-title{
+    font-size:28px;
+}
+
+.btn-gold{
+    padding:12px 25px;
+}
+
+} */
+
+
+/* -------------------- */
+/* ==========================================================================
+   1. Base & Global Styles
+   ========================================================================== */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0b0b0c; /* Deep dark background matching the image */
+    color: #ffffff;
+    min-height: 100vh;
+}
+
+/* Base section wrapper handling the subtle radial glow */
+.hero-banner {
+    /* background: radial-gradient(circle at 70% 50%, #16161a 0%, #0b0b0c 100%); */
+    background: var(--bg-dark-blue);
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   2. Typography & Custom Color Tokens
+   ========================================================================== */
+.sub-title {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #c48c46; /* Elegant gold accent tint */
+    text-transform: uppercase;
+}
+
+.main-title {
+    font-size: 2.75rem; /* Dynamic fluid scale pairing with Bootstrap layout */
+    font-weight: 800;
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+.highlight-text {
+    color: #d19852; /* Main copper-gold color tone */
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #b3b3b3; /* Soft gray for high text readability against black */
+    max-width: 500px; /* Restricts line length for optimized reading */
+}
+
+/* ==========================================================================
+   3. Custom Components (CTA Button)
+   ========================================================================== */
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 28px;
+    border: 1px solid #d19852;
+    border-radius: 30px;
+    color: #d19852;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button .arrow {
+    margin-left: 8px;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Interactive Animations */
+.cta-button:hover {
+    background-color: #d19852;
+    color: #0b0b0c;
+    text-decoration: none;
+}
+
+.cta-button:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* ==========================================================================
+   4. Image Component Elements
+   ========================================================================== */
+.banner-image-wrapper {
+    max-width: 100%;
+}
+
+.custom-banner-img {
+    border-radius: 4px;
+    object-fit: cover;
+    display: block;
+}
+
+/* ==========================================================================
+   5. Comprehensive Responsive Mobile Breakpoints
+   ========================================================================== */
+
+/* Tablet & Smaller Desktop Screens (Bootstrap 'lg' breakpoint) */
+@media (max-width: 991.98px) {
+    .hero-banner {
+        /* Shift gradient glow to center on smaller devices */
+        background: radial-gradient(circle at 50% 25%, #16161a 0%, #0b0b0c 100%);
+    }
+    
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .description {
+        font-size: 14px;
+    }
+    
+    .custom-banner-img {
+        /* Caps high vertical stretching on intermediate screens */
+        max-height: 380px; 
+    }
+}
+
+/* Compact Mobile Viewports (Smartphones) */
+@media (max-width: 575.98px) {
+    .hero-banner {
+        padding-top: 40px !important;
+        padding-bottom: 40px !important;
+    }
+
+    .main-title {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+    
+    .description {
+        font-size: 13.5px;
+        line-height: 1.5;
+    }
+
+    .cta-button {
+        padding: 11px 24px;
+        font-size: 13px;
+    }
+    
+    .custom-banner-img {
+        max-height: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- */
+/* Color Variables & Section Setup */
+:root {
+  --bg-dark-blue: #0b131f; /* Premium dark navy background */
+  --accent-gold: #c5934a;  /* Premium gold/orange text accent */
+  --text-muted: #a0aec0;   /* Clean readable gray for body text */
+}
+
+.story-section {
+  background-color: var(--bg-dark-blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fallback, use your site font */
+}
+
+/* Typography Details */
+.text-accent {
+  color: var(--accent-gold);
+}
+
+.tracking-wider {
+  letter-spacing: 0.15em;
+}
+
+.header-title {
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.text-muted-custom {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.leading-relaxed {
+  line-height: 1.65;
+}
+
+/* Image Presentation & Aspect Ratio Control */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10; /* Maintains the cinematic aspect ratio */
+  background-color: #1a202c; /* Placeholder skeleton color while loading */
+}
+
+.image-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+/* Subtle Hover Effect for Premium Feel */
+.image-wrapper:hover img {
+  transform: scale(1.03);
+}
+
+/* Mobile Tweak for Better Balance */
+@media (max-width: 767.98px) {
+  .header-title {
+    font-size: 2.25rem;
+  }
+  .image-wrapper {
+    aspect-ratio: 4 / 3; /* Slightly boxier ratio fits mobile screens better */
+  }
+}
+
+/* ==========================================================================
+   6. Product Categories Section Styles
+   ========================================================================== */
+.product-categories {
+    background-color: var(--bg-dark-blue); /* Consistent dark panel look */
+    border-top: 0.98px solid #c48c4647;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #c48c46; /* Matching gold-tint headline */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Base Category Card Configuration */
+.category-card {
+    background-color: var(--bg-dark-blue);
+    border: 1px solid rgba(196, 140, 70, 0.4); /* Subtle, elegant gold border */
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(209, 152, 82, 1); /* Highlights brighter on user hover */
+}
+
+/* Image bounding container box */
+.card-img-box {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Maintains exact square thumbnail proportions */
+    overflow: hidden;
+}
+
+.card-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.category-card:hover .card-img-box img {
+    transform: scale(1.06); /* Gentle immersive image zoom */
+}
+
+/* Card lower text content areas */
+.card-body-box {
+    padding: 20px 10px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-icon {
+    font-size: 18px;
+    color: #d19852;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.85;
+}
+
+.category-name {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 0.3px;
+}
+
+/* Custom extra-wide system grid rules for desktop */
+@media (min-width: 1200px) {
+    /* Splits columns natively into exactly 7 items per row if viewport width permits */
+    .row-cols-xl-7 > * {
+        flex: 0 0 auto;
+        width: 14.2857%;
+    }
+}
+
+/* ==========================================================================
+   7. Mobile View Adjustments for Product Grid
+   ========================================================================== */
+@media (max-width: 575.98px) {
+    .section-title {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    /* Padding adjustments for tighter smartphone screens */
+    .card-body-box {
+        padding: 15px 8px;
+    }
+
+    .category-icon {
+        margin-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .category-name {
+        font-size: 12px; /* Scales down font readability nicely inside 2-column mobile grids */
+    }
+}
+/* ==========================================================================
+   8. One-Line Horizontal Scroll Adjustments
+   ========================================================================== */
+
+/* Keeps columns working neatly inside a flex-nowrap row layout */
+.flex-nowrap > .col-6,
+.flex-nowrap > .col-sm-4,
+.flex-nowrap > .col-md-3 {
+    flex: 0 0 auto; 
+}
+
+/* Custom layout sizing for large desktops (exactly 7 items evened out) */
+@media (min-width: 1200px) {
+    .col-xl-7-custom {
+        flex: 0 0 auto !important;
+        width: 14.2857% !important;
+    }
+}
+
+/* Hides default native layout scrollbars for a cleaner web design touch */
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hidden {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* ----------------------------- */
+/* ==========================================================================
+   9. Why Choose Us Section Styles
+   ========================================================================== */
+.why-choose-us {
+    background-color: var(--bg-dark-blue); /* Matches premium dark layout background */
+    border-top: 0.98px solid #c48c4647;
+}
+
+.section-heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #c48c46; /* Clean signature gold color tone */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Feature Grid Card Architecture */
+.feature-card {
+    background-color: var(--bg-dark-blue);
+    border: 1px solid rgba(196, 140, 70, 0.35); /* Thin gold border */
+    border-radius: 12px; /* Smooth rounded corners matching original design */
+    padding: 30px 24px;
+    display: flex;
+    align-items: flex-start; /* Horizontal layout: icon next to text */
+    gap: 20px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(209, 152, 82, 0.9); /* Subtle hover feedback */
+}
+
+/* Icon Sizing Wrapper */
+.feature-icon-wrapper {
+    flex-shrink: 0;
+}
+
+.feature-icon {
+    font-size: 28px;
+    color: #d19852; /* Gold theme color for custom assets */
+    line-height: 1;
+    display: block;
+}
+
+/* Content Text Wrappers */
+.feature-text-wrapper {
+    flex-grow: 1;
+}
+
+.feature-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #d19852; /* Gold text matching original card headers */
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.feature-desc {
+    font-size: 13.5px;
+    line-height: 1.5;
+    color: #b3b3b3; /* Gray description tint */
+    margin: 0;
+}
+
+/* ==========================================================================
+   10. Mobile & Tablet View Adjustments
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    /* Shifts layout to top-down alignment inside cards for cleaner tablet spacing */
+    .feature-card {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .section-heading {
+        font-size: 16px;
+    }
+
+    /* Optional change for small phones: center alignments if needed */
+    .feature-card {
+        flex-direction: row; /* Keeps horizontal layout if you want to copy image exactly */
+        align-items: flex-start;
+        gap: 16px;
+        padding: 20px 16px;
+    }
+
+    .feature-icon {
+        font-size: 24px;
+    }
+
+    .feature-title {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .feature-desc {
+        font-size: 13px;
+    }
+}
+
+/* ---------------------------------- */
+/* ==========================================================================
+   11. Stats Counter Section Styles
+   ========================================================================== */
+.stats-counter-section {
+    background-color: var(--bg-dark-blue);
+    /* Optional: background-image: url('your-dark-texture.jpg'); if you want the dark background grain */
+    border-top: 0.98px solid #c48c4647;
+}
+
+/* Flex layout pairing icons with dynamic typography metrics side-by-side */
+.stat-item-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.stat-icon-side {
+    font-size: 36px;
+    color: #d19852; /* Signature accent gold tone */
+    line-height: 1;
+}
+
+.stat-text-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-number-wrapper {
+    font-size: 38px;
+    font-weight: 800;
+    color: #d19852; /* Gold numbers */
+    line-height: 1.1;
+    font-variant-numeric: tabular-nums; /* Prevents text layout shifting while numbers change */
+}
+
+.stat-label {
+    font-size: 13px;
+    font-weight: 400;
+    color: #ffffff; /* White text for labels */
+    margin: 4px 0 0 0;
+    white-space: nowrap; /* Prevents ugly text wrapping across labels */
+}
+
+/* ==========================================================================
+   12. Stats Counter Mobile & Tablet Views
+   ========================================================================== */
+@media (max-width: 991.98px) {
+    .stat-number-wrapper {
+        font-size: 30px;
+    }
+    
+    .stat-icon-side {
+        font-size: 30px;
+    }
+
+    .stat-label {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .stat-item-box {
+        /* Align content cleanly inside a 2-column mobile structure grid row */
+        justify-content: flex-start;
+        padding-left: 10%;
+        gap: 12px;
+    }
+
+    .stat-number-wrapper {
+        font-size: 28px;
+    }
+
+    .stat-icon-side {
+        font-size: 26px;
+    }
+}
+
+
+
+/* ------------------- */
+/* Color Variables & Section Setup */
+:root {
+  --bg-dark-blue: #0b131f; /* Premium dark navy background */
+  --accent-gold: #c5934a;  /* Premium gold/orange text accent */
+  --text-muted: #a0aec0;   /* Clean readable gray for body text */
+}
+
+.story-section {
+  background-color: var(--bg-dark-blue);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fallback, use your site font */
+  border-top: 0.98px solid #c48c4647;
+}
+
+/* Typography Details */
+.text-accent {
+  color: var(--accent-gold);
+}
+
+.tracking-wider {
+  letter-spacing: 0.15em;
+}
+
+.header-title {
+  color: #ffffff;
+  line-height: 1.2;
+}
+
+.text-muted-custom {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.leading-relaxed {
+  line-height: 1.65;
+}
+
+/* Image Presentation & Aspect Ratio Control */
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10; /* Maintains the cinematic aspect ratio */
+  background-color: #1a202c; /* Placeholder skeleton color while loading */
+}
+
+.image-wrapper img {
+  transition: transform 0.5s ease;
+}
+
+/* Subtle Hover Effect for Premium Feel */
+.image-wrapper:hover img {
+  transform: scale(1.03);
+}
+
+/* Mobile Tweak for Better Balance */
+@media (max-width: 767.98px) {
+  .header-title {
+    font-size: 2.25rem;
+  }
+  .image-wrapper {
+    aspect-ratio: 4 / 3; /* Slightly boxier ratio fits mobile screens better */
+  }
+}
+
+
+/* --------------- */
+:root {
+    --gold: #c89b5b;
+    --dark: #061326;
+}
+
+/* Section */
+.supplier-cta {
+    /* background: transparent; */
+    background:var(--bg-dark-blue);
+}
+
+/* Main Box */
+.supplier-box {
+    position: relative;
+    /* background: linear-gradient(
+        135deg,
+        rgba(4, 12, 28, 0.95),
+        rgba(8, 18, 38, 0.95)
+    ); */
+    background: var(--bg-dark-blue);
+
+    border: 1px solid rgba(200, 155, 91, .35);
+    border-radius: 30px;
+
+    padding: 35px 50px;
+
+    overflow: hidden;
+}
+
+/* Decorative pattern */
+.supplier-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: .06;
+
+    background-image:
+        radial-gradient(circle, var(--gold) 1px, transparent 1px);
+
+    background-size: 35px 35px;
+    pointer-events: none;
+}
+
+/* Icon */
+.cta-icon {
+    width: 90px;
+    height: 90px;
+
+    border: 2px solid rgba(200,155,91,.4);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: auto;
+}
+
+.cta-icon i {
+    color: var(--gold);
+    font-size: 42px;
+}
+
+/* Text */
+.cta-content h2 {
+    color: var(--gold);
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.cta-content p {
+    color: #e2e2e2;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* Button */
+.cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 240px;
+    height: 75px;
+
+    border: 2px solid var(--gold);
+    border-radius: 60px;
+
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.cta-btn:hover {
+    background: var(--gold);
+    color: var(--dark);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+
+    .supplier-box {
+        padding: 30px;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+    .cta-content p {
+        font-size: 16px;
+    }
+
+    .cta-btn {
+        min-width: 200px;
+        height: 65px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .supplier-box {
+        padding: 25px 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .cta-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .cta-icon i {
+        font-size: 30px;
+    }
+
+    .cta-content h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        
+    }
+
+    .cta-content p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    .cta-btn {
+        width: 100%;
+        margin-top: 25px;
+        height: 60px;
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+/* ---------------------------------------------------- */
+/* @keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.98s ease-in-out;
+} */
+/* ---------------------------------- */
